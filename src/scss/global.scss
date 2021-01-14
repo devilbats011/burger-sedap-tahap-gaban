@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Imbue:wght@100;300&family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+
+.b-check {
+  border: 1px solid #000;
+}
+
+.test {
+  border: 1px solid #000;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-black {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.family-potta {
+  font-family: "Potta One", cursive;
+}
+
+.article {
+  width: 100%;
+  // border: 1px solid transparent;
+  background-color: #272727;
+  padding: 0;
+  margin: 0;
+  &-container {
+    color: #c4c4c4;
+    margin: 0rem 15%;
+    padding: 5rem 0;
+  }
+}
+
+.footer {
+    width: 100%;
+    // border: 1px solid transparent;
+    background-color: #272727;
+    padding: 0;
+    margin: 0;
+    &-container {
+      color: #c4c4c4;
+      margin: 0rem 15%;
+      padding: .1rem 0 .1rem 0;
+    }
+}
+
+
+.header-1-wrapper {
+    width: fit-content;
+    margin: 1rem 0 4rem 0;
+    &:hover .header-1 + .bottom-line {
+        width: 90%;
+        border-radius: 60px;
+    }
+
+}
+
+.header-1 {
+  transition: 0.3s;
+  font-style: italic;
+  letter-spacing: 1.6px;
+  margin-bottom:0.6rem;
+
+}
+
+.bottom-line {
+    position: relative;
+    left:5px;
+    transition: 0.3s;
+    height: 2px;
+    background-image: linear-gradient(to right, #c4c4c4, #c4c4c4, transparent);
+    width: 0%;
+}
+
+.hr-bg {
+    background-image: linear-gradient(to right, #c4c4c4, #c4c4c4, transparent);
+}
+
+.hr-body {
+    height: 2px;
+    width: 100%;
+}
+
+
+.h1-size {
+  font-size: 39px;
+}
+
+.h2-size {
+  font-size: 31px;
+}
+
+

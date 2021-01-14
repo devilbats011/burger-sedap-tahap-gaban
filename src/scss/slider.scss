@@ -1,0 +1,69 @@
+.custom {
+  &-slider {
+    width: 100%;
+    & img {
+      height: 500px;
+    }
+  }
+}
+
+.carousel-indicators {
+    bottom: 3% !important;
+}
+
+.slider{
+
+    &-wrapper {
+      position: absolute;
+      top: 10%;
+      left: 14%;
+      padding: .8rem;
+      text-align: justify;
+      width:  fit-content;
+      padding: 2.2rem 1.2rem;
+      border-radius: 10px;
+        
+        color: #111;
+
+      
+      & h1 {
+          letter-spacing: 1px;
+          padding: 0.4rem 0 2rem 0;
+      }
+    }
+  
+    &-p {
+          width: 400px;
+          padding: .5rem;
+          letter-spacing: 1px;
+          font-size: 16px;
+    }
+
+
+    &-price {
+        margin-top:2rem;
+        background: rgba( 0, 0, 0, .8  );
+        backdrop-filter: blur( 1.0px );
+        -webkit-backdrop-filter: blur( 2.0px );
+        border-radius: 10px;
+        color: #c4c4c4;
+        width: fit-content;
+        font-size: 32px;
+        padding: 0.8rem;
+        letter-spacing: 4px;
+        font-style: italic;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+  .custom {
+    &-slider {
+      width: 100%;
+      & img {
+        height: 635px;
+      }
+    }
+  }
+}

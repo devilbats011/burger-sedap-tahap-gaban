@@ -1,0 +1,40 @@
+.group-card-2-lg-4 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-around;
+  grid-gap: 1rem;
+}
+
+.ccard {
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+  height: 210px;
+  & > img {
+    width: inherit;
+    height: 70%;
+  }
+
+  & p {
+    
+    margin: 0.3rem;
+    font-family: "Potta One", cursive;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .group-card-2-lg-4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .ccard {
+    & p {
+        letter-spacing: 1px;
+      font-size: 16px;
+    }
+  }
+}
