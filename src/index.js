@@ -1,21 +1,25 @@
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
-import React,{ createContext } from 'react';
-import ReactDOM from 'react-dom';
-import reportWebVitals from './reportWebVitals';
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import reportWebVitals from "./reportWebVitals";
 
 
 /*
- implement context for bm|english | color white black mode on going
+implement context for bm|english | color white black mode on going
 */
-const ThemeLanguage = createContext('light');
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+      <App />
+
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

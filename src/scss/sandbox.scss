@@ -1,0 +1,13 @@
+.sandbox {
+    width: 100%;
+    min-height: 100vh;
+    background-color:#123;
+
+    & > h1#sandbox-welcome {
+        text-align: center;
+        color: #f9f9ff;
+        line-height: 3.5;
+        font-size: 39px;
+        letter-spacing: 1.6px;
+    }
+}
