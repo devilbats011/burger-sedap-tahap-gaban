@@ -1,9 +1,15 @@
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import React from 'react';
+import React,{ createContext } from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
+
+
+/*
+ implement context for bm|english | color white black mode on going
+*/
+const ThemeLanguage = createContext('light');
 
 ReactDOM.render(
   <React.StrictMode>

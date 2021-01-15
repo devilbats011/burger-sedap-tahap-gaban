@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Imbue:wght@100;300&family=Potta+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.family-potta {
+  font-family: "Potta One", cursive;
+}
+
+.family-lobster {
+  font-family: 'Lobster', cursive;
+}
 
 .b-check {
   border: 1px solid #000;
@@ -12,21 +21,24 @@
 .glass {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
+}
+
+.glass-border {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.glass-black {
-  background: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+.black-glass {
+  background: rgba( 0, 0, 0, .7  );
+  backdrop-filter: blur( 1.0px );
+  -webkit-backdrop-filter: blur( 1.0px );
+  color: #c4c4c4;
 }
 
-.family-potta {
-  font-family: "Potta One", cursive;
+.black-glass-border {
+  border: 1px solid #c4c4c4;
 }
+
+
 
 .article {
   width: 100%;
@@ -98,6 +110,10 @@
 
 .h2-size {
   font-size: 31px;
+}
+
+.h3-size {
+  font-size: 25px;
 }
 
 

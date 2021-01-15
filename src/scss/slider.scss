@@ -8,54 +8,51 @@
 }
 
 .carousel-indicators {
-    bottom: 3% !important;
+  bottom: 3% !important;
 }
 
-.slider{
-
-    &-wrapper {
-      position: absolute;
-      top: 10%;
-      left: 14%;
-      padding: .8rem;
-      text-align: justify;
-      width:  fit-content;
-      padding: 2.2rem 1.2rem;
-      border-radius: 10px;
-        
-        color: #111;
-
-      
-      & h1 {
-          letter-spacing: 1px;
-          padding: 0.4rem 0 2rem 0;
-      }
+.slider {
+  &-wrapper {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.8rem;
+    text-align: justify;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 10px;
+    
+    color: #111;
+    
+    & h1 {
+      font-family: "Lobster", cursive;
+      letter-spacing: 1px;
+      padding: 0.4rem 0 1rem 0;
+      font-size: 20px;
     }
-  
-    &-p {
-          width: 400px;
-          padding: .5rem;
-          letter-spacing: 1px;
-          font-size: 16px;
-    }
+  }
 
+  &-p {
+    display: none;
+  }
 
-    &-price {
-        margin-top:2rem;
-        background: rgba( 0, 0, 0, .8  );
-        backdrop-filter: blur( 1.0px );
-        -webkit-backdrop-filter: blur( 2.0px );
-        border-radius: 10px;
-        color: #c4c4c4;
-        width: fit-content;
-        font-size: 32px;
-        padding: 0.8rem;
-        letter-spacing: 4px;
-        font-style: italic;
-    }
-
+  &-price {
+    font-family: "Lobster", cursive;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    color: #c4c4c4;
+    // border: 1px solid #c4c4c4;
+    width: fit-content;
+    font-size: 16px;
+    letter-spacing: 4px;
+    padding: 0.8rem;
+    font-style: italic;
+    margin: auto;
+  }
 }
-
 
 @media (min-width: 1000px) {
   .custom {
@@ -64,6 +61,36 @@
       & img {
         height: 635px;
       }
+    }
+  }
+  .slider {
+    &-wrapper {
+      position: absolute;
+      transform: translate(0, 0);
+      bottom: 35%;
+      left: 15%;
+      width: 40%;
+      text-align: justify;
+      padding: 1rem 1.4rem;
+      
+      border-radius: 10px;
+      
+      & h1 {
+        font-size: 31px;
+        margin-top: 1.5rem;
+      }
+    }
+    
+    &-p {
+      display: inherit;
+      margin: 1.5rem 0;
+      // border: 1px solid #000;
+    }
+    &-price {
+      font-size: 31px;
+      padding: 1rem;
+      margin: 2rem 0;
+      transform: translateY(10px);
     }
   }
 }
