@@ -1,13 +1,13 @@
 import "./App.scss";
 import "scss/global.scss";
-import React, { useState } from "react";
+import React, { useReducer } from "react";
 import Nav from "layouts/Nav";
 import Slider from "layouts/Slider";
 import CraveMore from "layouts/CraveMore";
 import Footer from "layouts/Footer";
 import Sandbox from "layouts/Sandbox";
 import languageContext from "context/language.js";
-import * as db from 'mockDb.js'
+import * as db from "mockDb.js";
 
 function App() {
   /*const [state, dispatch] = useReducer(reducer, initialState);*/
@@ -26,16 +26,27 @@ function App() {
   
   3. implement context for bm|english | color white black mode
   4. KIV ADD CART flow system using everything i have /know
-  
   */
-  const initialState = {
-    BM: db.BM,
-    BI: db.BI,
-  };
-  const [store, setStore] = useState(initialState);
+
+  function reducer(state, action) {
+    switch (action.type) {
+      case "BM":
+        return db.BM_TEST;
+
+      case "BI":
+        return db.BI_TEST;
+
+      default:
+        return state;
+    }
+  }
+
+  const initialState =  db.BM_TEST;
+
+  const [store, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <languageContext.Provider value={[store,setStore]} >
+    <languageContext.Provider value={[store, dispatch]}>
       <div className="app">
         <Sandbox />
         <Nav />

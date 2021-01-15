@@ -5,34 +5,30 @@ import "scss/sandbox.scss";
 /*
    ### Sandbox is a pagelayout for testing/practicing purpose ~
     ## Testing and practicing react context
-    ## Testing both useState and useReducer
+    ## Testing useReducer
 */
 
 function Sandbox() {
-  const handleClick = (leStore, setLeStore) => {
-    /*
-      maybe  this Architecture can be more simplify and improvise
-    */
-    const updateStore = {
-      ...leStore,
-      BI: {
-        slider: {
-          title: "burger cheese!!!!!!!!",
-          description: "tasty yummy delicious!!!!!!!",
-        },
-      },
-    };
+  const handleClickBM = (leStore, leDispatch) => {
+    leDispatch({type:"BM"})
+  }
 
-    setLeStore(updateStore);
+  const handleClickBI = (leStore, leDispatch) => {
+    leDispatch({type:"BI"})
   }
   
   return (
     <languageContext.Consumer>
-      {([store, setStore]) => (
+      {([store, dispatch]) => (
         <div className="sandbox">
-          <h1 id="sandbox-welcome"> WELCOME TO SANDBOX</h1>
-          <button onClick={() => { handleClick(store, setStore) }}  >
-            CLICK BUTTON!
+          <h1 id="sandbox-welcome"> {store} </h1>
+
+          <button onClick={() => { handleClickBM(store, dispatch) }}  >
+            Bahasa Melayu
+          </button>
+          <br/>
+          <button onClick={() => { handleClickBI(store, dispatch) }}  >
+            Bahasa Inggeris
           </button>
         </div>
       )}

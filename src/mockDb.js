@@ -14,3 +14,6 @@ export const BI = {
     
 }
 
+export const BM_TEST = "SELAMAT DATANG KE SANDBOX";
+export const BI_TEST = "WELCOME TO SANDBOX";
+
