@@ -42,17 +42,16 @@ function App() {
   }
 
   const initialState =  db.BM_TEST;
-
   const [store, dispatch] = useReducer(reducer, initialState);
 
   return (
     <languageContext.Provider value={[store, dispatch]}>
       <div className="app">
-        <Sandbox />
         <Nav />
         <Slider />
         <CraveMore />
         <Footer />
+        <Sandbox />
       </div>
     </languageContext.Provider>
   );
